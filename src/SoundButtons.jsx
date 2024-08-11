@@ -9,20 +9,20 @@ function SoundButtons() {
 
   const categories = [
     { name: "Nature's Sound", sounds: [
-        { name: "Rain", src: "/public/mixkit-light-rain-loop-1253.wav" },
+        { name: "Rain", src: "https://your-cdn-domain.com/path/to/autumn-sky-meditation-7618.mp3" },
         { name: "River", src: "/public/mixkit-river-in-the-forest-with-birds-1216.wav" },
         { name: "Campfire", src: "/public/mixkit-campfire-crackles-1330.wav" },
-        { name: "Campfire", src: "/public/the-beat-of-nature-122841.mp3" },
-        { name: "Campfire", src: "/public/the-beat-of-nature-122841 (1).mp3" },
-        { name: "Campfire", src: "/public/" },
-        { name: "Campfire", src: "/public/mixkit-river-in-the-forest-with-birds-1216.wav" },
+        { name: "Nature", src: "/public/the-beat-of-nature-122841.mp3" },
+        { name: "Forest", src: "/public/mixkit-river-in-the-forest-with-birds-1216.wav" },
+        { name: "Birds", src: "/public/mixkit-river-in-the-forest-with-birds-1216.wav" },
+        { name: "Thunder storm", src: "/public/mixkit-thunderstorm-and-rain-loop-2402.wav" },
       ]
     },
     { name: "Meditation", sounds: [
-        { name: "Meditation", src: "/public/the-beat-of-nature-122841.mp3" },
-        { name: "Meditation", src: "/public/autumn-sky-meditation-7618.mp3" },
-        { name: "Meditation", src: "/public/flute-meditation-music-8-230805.mp3" },
-        { name: "Meditation", src: "/public/meditation-blue-138131.mp3" },
+        { name: "Beat of Nature", src: "/public/the-beat-of-nature-122841.mp3" },
+        { name: "Autumn sky ", src: "/public/autumn-sky-meditation-7618.mp3" },
+        { name: "Flute Meditation", src: "/public/flute-meditation-music-8-230805.mp3" },
+        { name: "Meditation Blue", src: "/public/meditation-blue-138131.mp3" },
       ]
     },
     { name: "Music", sounds: [
