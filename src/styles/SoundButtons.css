@@ -1,0 +1,239 @@
+/* Apply grey background to the entire screen */
+body {
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Root Element */
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px 5px;
+  text-align: center;
+}
+
+/* Logo */
+.logo {
+  height: 2em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Animation for Logo Spin */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card */
+.card {
+  padding: 2em;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+/* Documentation Link */
+.read-the-docs {
+  color: #888;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+/* Headings */
+h1 {
+  color: #444;
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Chat Button */
+.chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+/* Chat Container */
+.chat-container {
+  position: fixed;
+  bottom: 80px; /* Adjusted to account for the chat button */
+  right: 20px;
+  height: 400px;
+  width: 300px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  z-index: 1000;
+  transform: scale(0); /* Initially hidden */
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.chat-container.open {
+  transform: scale(1); /* Open the chat with a smooth transition */
+}
+
+/* Input Field */
+input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: block;
+  font-size: 1em;
+}
+
+/* Message List */
+.message-list {
+  padding: 20px;
+  height: calc(100% - 70px);
+  overflow-y: auto;
+}
+
+/* Message Input */
+.message-input {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background: #f9f9f9;
+}
+
+/* Relaxing Sounds */
+.relaxing-sounds {
+  text-align: center;
+  margin: 20px;
+}
+
+/* Category Buttons and Sound Buttons */
+.category-buttons, .sound-buttons {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: center; /* Center horizontally */
+  margin: 0 auto; /* Center container horizontally */
+}
+
+.category-buttons button, .sound-buttons button {
+  display: block; /* Makes the buttons stack vertically */
+  width: 80%; /* Adjust the width as needed */
+  margin: 10px auto; /* Centers the buttons */
+  padding: 10px 20px;
+  background-color: #e6ffe6; /* Very light green background */
+  color: #006600; /* Dark green text */
+  border: 2px solid #006600; /* Green border */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category-buttons button:hover, .sound-buttons button:hover {
+  background-color: #ccffcc; /* Slightly darker green on hover */
+}
+
+/* Sound Panel */
+.sound-panel {
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fadeIn 0.5s forwards ease-in-out;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom styles for control buttons */
+.sound-controls {
+  display: flex;
+  flex-direction: column; /* Stack control buttons vertically */
+  align-items: center; /* Center horizontally */
+}
+
+.sound-controls button {
+  margin: 10px 0; /* Vertical margin */
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Stop Button */
+.sound-controls button.stop {
+  background-color: #ff4d4d; /* Light red */
+  color: white;
+  border: 2px solid #cc0000; /* Darker red */
+}
+
+.sound-controls button.stop:hover {
+  background-color: #cc0000; /* Darker red on hover */
+}
+
+/* Loop Button */
+.sound-controls button.loop {
+  background-color: #ffeb3b; /* Light yellow */
+  color: black;
+  border: 2px solid #fbc02d; /* Darker yellow */
+}
+
+.sound-controls button.loop:hover {
+  background-color: #fbc02d; /* Darker yellow on hover */
+}
+
+/* Back Button */
+.back-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #81c784; /* Light green */
+  color: white;
+  border: 2px solid #66bb6a; /* Darker green */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #66bb6a; /* Darker green on hover */
+}
