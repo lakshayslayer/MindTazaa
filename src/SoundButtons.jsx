@@ -9,26 +9,26 @@ function SoundButtons() {
 
   const categories = [
     { name: "Nature's Sound", sounds: [
-        { name: "Rain", src: "https://your-cdn-domain.com/path/to/autumn-sky-meditation-7618.mp3" },
+        { name: "Rain", src: "https://raw.githubusercontent.com/lakshayslayer/MindTazaa/master/public/mixkit-light-rain-loop-1253.wav" },
         { name: "River", src: "https://raw.githubusercontent.com/lakshayslayer/MindTazaa/master/public/autumn-sky-meditation-7618.mp3" },
-        { name: "Campfire", src: "/public/mixkit-campfire-crackles-1330.wav" },
-        { name: "Nature", src: "/public/the-beat-of-nature-122841.mp3" },
-        { name: "Forest", src: "/public/mixkit-river-in-the-forest-with-birds-1216.wav" },
-        { name: "Birds", src: "/public/mixkit-river-in-the-forest-with-birds-1216.wav" },
-        { name: "Thunder storm", src: "/public/mixkit-thunderstorm-and-rain-loop-2402.wav" },
+        { name: "Campfire", src: "https://raw.githubusercontent.com/lakshayslayer/MindTazaa/master/public/mixkit-campfire-crackles-1330.wav" },
+        { name: "Nature", src: "https://raw.githubusercontent.com/lakshayslayer/MindTazaa/master/public/the-beat-of-nature-122841%20(1).mp3" },
+        { name: "Forest", src: "https://raw.githubusercontent.com/lakshayslayer/MindTazaa/master/public/mixkit-river-in-the-forest-with-birds-1216.wav" },
+        { name: "Birds", src: "https://raw.githubusercontent.com/lakshayslayer/MindTazaa/master/public/mixkit-river-in-the-forest-with-birds-1216.wav" },
+        { name: "Thunder storm", src: "https://raw.githubusercontent.com/lakshayslayer/MindTazaa/master/public/mixkit-calm-thunderstorm-in-the-jungle-2415.wav" },
       ]
     },
     { name: "Meditation", sounds: [
-        { name: "Beat of Nature", src: "/public/the-beat-of-nature-122841.mp3" },
-        { name: "Autumn sky ", src: "/public/autumn-sky-meditation-7618.mp3" },
-        { name: "Flute Meditation", src: "/public/flute-meditation-music-8-230805.mp3" },
-        { name: "Meditation Blue", src: "/public/meditation-blue-138131.mp3" },
+        { name: "Beat of Nature", src: "https://raw.githubusercontent.com/lakshayslayer/MindTazaa/master/public/the-beat-of-nature-122841%20(1).mp3" },
+        { name: "Autumn sky ", src: "https://raw.githubusercontent.com/lakshayslayer/MindTazaa/master/public/autumn-sky-meditation-7618.mp3" },
+        { name: "Flute Meditation", src: "https://raw.githubusercontent.com/lakshayslayer/MindTazaa/master/public/flute-meditation-music-8-230805.mp3" },
+        { name: "Meditation Blue", src: "https://raw.githubusercontent.com/lakshayslayer/MindTazaa/master/public/meditation-blue-138131.mp3" },
       ]
     },
     { name: "Music", sounds: [
-        { name: "Good Night", src: "/public/good-night-160166.mp3" },
-        { name: "Perfect Beauty", src: "/public/perfect-beauty-191271.mp3" },
-        { name: "Beat of Nature", src: "/public/the-beat-of-nature-122841.mp3" },
+        { name: "Good Night", src: "https://raw.githubusercontent.com/lakshayslayer/MindTazaa/master/public/good-night-160166.mp3" },
+        { name: "Perfect Beauty", src: "https://raw.githubusercontent.com/lakshayslayer/MindTazaa/master/public/perfect-beauty-191271.mp3" },
+        { name: "Beat of Nature", src: "https://raw.githubusercontent.com/lakshayslayer/MindTazaa/master/public/the-beat-of-nature-122841%20(1).mp3" },
       ]
     },
   ];
